@@ -28,6 +28,10 @@ public class Client {
     @OneToMany(mappedBy = "client")
     private List<Emprunt> emprunts;
 
+	public Client() {
+
+	};
+
 	/**
 	 * @return the id
 	 */

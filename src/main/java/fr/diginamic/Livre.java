@@ -29,7 +29,12 @@ public class Livre {
 	@JoinTable(name = "compo", joinColumns = @JoinColumn(name = "id_livre", referencedColumnName = "id"),
 	inverseJoinColumns = @JoinColumn(name = "id_emprunt", referencedColumnName = "id"))
 	private Set<Emprunt> emprunts;
+	
+	//constructeur sans parametre : utilisé par Hibernate
+	public Livre() {
 
+	};
+	
 	/**
 	 * @return the id
 	 */

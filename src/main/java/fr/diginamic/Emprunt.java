@@ -41,6 +41,11 @@ public class Emprunt {
     private Set<Livre> livres;
     
 
+    public Emprunt() {
+        
+    };
+
+    
     /**
      * @return the id
      */

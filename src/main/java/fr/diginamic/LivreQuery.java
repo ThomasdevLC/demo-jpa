@@ -11,6 +11,8 @@ public class LivreQuery {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("bibliotheque");
 		EntityManager em = emf.createEntityManager();
 
+		em.getTransaction().begin();
+
 		int idLivre = 1;
 		Livre livre = em.find(Livre.class, idLivre);
 
@@ -20,12 +22,10 @@ public class LivreQuery {
 		} else {
 			System.out.println("Aucun livre trouvé avec l'ID : " + idLivre);
 
-//		 em.getTransaction().isActive()
-//		em.getTransaction().rollback();
-//			
+		em.getTransaction().commit();
 
-			em.close();
-			emf.close();
+		em.close();
+		emf.close();
 
 		}
 	}

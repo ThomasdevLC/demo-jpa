@@ -20,7 +20,6 @@
             <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/bibliotheque" />
             <property name="jakarta.persistence.jdbc.user" value="root" />
             <property name="jakarta.persistence.jdbc.password" value="3-!zPv%2X62Zo" />
-
         </properties>
     </persistence-unit>
 
